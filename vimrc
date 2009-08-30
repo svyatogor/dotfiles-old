@@ -1,3 +1,4 @@
+set nocompatible
 syntax on
 colorscheme ir_black
 set nu
@@ -10,6 +11,11 @@ set incsearch
 set ignorecase
 set smartcase
 set cursorline
+set showcmd
+set showmatch
+set wildmenu
+set wildignore=*.o,*~
+
 "set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
 "let g:fuzzy_ignore = "gems/*"
 noremap <C-p> :NERDTreeToggle<CR>
@@ -24,10 +30,15 @@ let g:FuzzyFinderOptions.Base.key_open_tab="<CR>"
 nnoremap <space> za
 
 " tabs 
-nmap <C-S-tab> :tabprevious<cr> 
-nmap <C-tab> :tabnext<cr> 
-map <C-S-tab> :tabprevious<cr> 
-map <C-tab> :tabnext<cr> 
-imap <C-S-tab> <ESC>:tabprevious<cr>i 
-imap <C-tab> <ESC>:tabnext<cr>i 
-
+let mapleader = ","
+nmap <leader>1 1gt
+nmap <leader>2 2gt
+nmap <leader>3 3gt
+nmap <leader>4 4gt
+nmap <leader>5 5gt
+nmap <leader>6 6gt
+nmap <leader>7 7gt
+nmap <leader>8 8gt
+nmap <leader>9 9gt
+nmap <leader>w :tabclose<CR>
+nmap <leader>l :tabs<CR>

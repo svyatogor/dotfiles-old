@@ -1,4 +1,5 @@
 alias ls='ls -G'
+alias gc='git commit -a -v'
 if [[ -f /usr/bin/mate ]]; then
 		alias e='mate'
 else
