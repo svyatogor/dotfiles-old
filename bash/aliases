@@ -1,0 +1,9 @@
+alias ls='ls -G'
+if [[ -f /usr/bin/mate ]]; then
+		alias e='mate'
+else
+		alias e='vim'
+fi
+function reload () {
+	source ~/.bashrc
+}

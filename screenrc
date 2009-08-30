@@ -1,0 +1,5 @@
+source $HOME/bin/dotfiles/screen/common
+
+hardstatus string '%{+b Wr}\%{= Wy}o%{=b WY}/%{=b Wk} %100` %{= Wk}|%= |%{=B bW}%102`%{= Wk}|%{=b rW}%101`%{= Wk}|%{= Yk}%106`%{= Wk}|%{= Wk}%104`%{=b gW}%103`%{= Wk} %{=b gW}%105`%{= Wk}|%Y-%m-%d %0c:%s'
+# hardstatus string '%{= wk} %{+b RK} RH %{+b wk} %100` %{= Wk}|%= |%{+b gW}%103`%{= Wk}|%{= wk}%Y-%m-%d %c:%s'
+# hardstatus string '%{= wk} %{+b Bw} f %{+b wk} %100` %{= Wk}|%= |%{+b gW}%103`%{= Wk}|%{= wk}%Y-%m-%d %c:%s'
