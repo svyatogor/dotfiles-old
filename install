@@ -1,0 +1,12 @@
+#!/bin/sh
+
+rm -f ~/.vimrc
+rm -f ~/.gvimrc
+rm -rf ~/.vim/
+
+ln -sf $HOME/bin/dotfiles/vimrc $HOME/.vimrc 
+ln -sf $HOME/bin/dotfiles/gvimrc $HOME/.gvimrc 
+
+echo "source \$HOME/bin/dotfiles/screenrc" > $HOME/.screenrc
+echo "source \$HOME/bin/dotfiles/bashrc" > $HOME/.bashrc
+echo "[ -f ~/.bashrc ] && source ~/.bashrc" > $HOME/.bash_profile

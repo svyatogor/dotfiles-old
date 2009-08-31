@@ -22,6 +22,7 @@
 startup_message off
 vbell off
 msgwait 1
+defutf8 on
 
 # backtick 100 3600 3600 /usr/share/screen-profiles/bin/release
 # backtick 101 3600 3600 /usr/share/screen-profiles/bin/updates-available
@@ -34,7 +35,7 @@ msgwait 1
 # hardstatus alwayslastline
 
 # Window tabs, second to last line
-caption always "%{kW}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kW}%?%+Lw%?"
+caption always "%{kW}%?%-Lw%?%{bw}%{kb}%n*%f %t%?(%u)%?%{kW}%?%+Lw%?"
 
 # Allow scrolling in xterm, 10000 lines
 termcapinfo xterm* ti@:te@
