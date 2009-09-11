@@ -2,8 +2,9 @@
 
 rm -f ~/.vimrc
 rm -f ~/.gvimrc
-rm -rf ~/.vim/
+rm -rf ~/.vim
 
+ln -sf $HOME/bin/dotfiles/vim $HOME/.vim 
 ln -sf $HOME/bin/dotfiles/vimrc $HOME/.vimrc 
 ln -sf $HOME/bin/dotfiles/gvimrc $HOME/.gvimrc 
 

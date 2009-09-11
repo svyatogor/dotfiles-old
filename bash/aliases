@@ -1,5 +1,6 @@
 alias ls='ls -G'
 alias gc='git commit -a -v'
+alias gs='git status'
 if [[ -f /usr/bin/mate ]]; then
 		alias e='mate'
 else
@@ -8,3 +9,4 @@ fi
 function reload () {
 	source ~/.bashrc
 }
+alias macvlc='/Applications/VLC.app/Contents/MacOS/cvlc'
