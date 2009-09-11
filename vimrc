@@ -15,6 +15,23 @@ set showcmd
 set showmatch
 set wildmenu
 set wildignore=*.o,*~
+set textwidth=80
+
+"make arrows even on wrapped lines
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
+
+filetype on
+filetype plugin on
+
+"cindent is great everywhere but in xml
+autocmd FileType xml set nocindent "also try smartindent
+
+autocmd FileType python set foldmethod=indent
 
 "set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
 "let g:fuzzy_ignore = "gems/*"
@@ -42,3 +59,5 @@ nmap <leader>8 8gt
 nmap <leader>9 9gt
 nmap <leader>w :tabclose<CR>
 nmap <leader>l :tabs<CR>
+
+map <F10> :g/^/norm gqq<CR> "Normalise the text
