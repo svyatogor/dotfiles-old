@@ -12,3 +12,4 @@ function reload () {
 alias macvlc='/Applications/VLC.app/Contents/MacOS/cvlc'
 alias grep='grep -C 3 --color=auto'
 alias less='less -r'
+alias ff='find . -iname'
