@@ -2,11 +2,13 @@
 
 rm -f ~/.vimrc
 rm -f ~/.gvimrc
+rm -f ~/.gitconfig
 rm -rf ~/.vim
 
 ln -sf $HOME/bin/dotfiles/vim $HOME/.vim 
 ln -sf $HOME/bin/dotfiles/vimrc $HOME/.vimrc 
 ln -sf $HOME/bin/dotfiles/gvimrc $HOME/.gvimrc 
+ln -sf $HOME/bin/dotfiles/gitconfig $HOME/.gitconfig 
 
 echo "source \$HOME/bin/dotfiles/screenrc" > $HOME/.screenrc
 echo "source \$HOME/bin/dotfiles/bashrc" > $HOME/.bashrc

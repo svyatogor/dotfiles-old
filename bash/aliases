@@ -1,4 +1,8 @@
-alias ls='ls -G'
+if [ `uname` == "Darwin" ]; then
+	alias ls='ls -G'
+else
+	alias ls='ls --color'
+fi
 alias gc='git commit -a -v'
 alias gs='git status'
 if [[ -f /usr/bin/mate ]]; then
