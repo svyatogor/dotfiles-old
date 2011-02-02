@@ -1,3 +1,14 @@
 [alias]
 	co = checkout
 	ci = commit
+[core]
+	excludesfile = /Volumes/Work/sergeyk/.gitignore
+	quotepath = false
+[user]
+	name = Sergey Kuleshov
+	email = sergeyk@prime-tel.com
+[diff]
+    # external = /usr/bin/mate
+    renames = true
+[branch]
+    autosetuprebase = always

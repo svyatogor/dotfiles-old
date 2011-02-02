@@ -61,3 +61,5 @@ nmap <leader>w :tabclose<CR>
 nmap <leader>l :tabs<CR>
 
 map <F10> :g/^/norm gqq<CR> "Normalise the text
+
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
